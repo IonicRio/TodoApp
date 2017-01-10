@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tasks</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let task of tasks">
+      <h2>{{task.text}}</h2>
+      <p>{{task.user.name}} {{task.user.surname}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
