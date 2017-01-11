@@ -1,6 +1,6 @@
+import { AboutPage } from './../about/about';
 import { Todo } from './../../providers/todo';
 import { Component } from '@angular/core';
-
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -15,7 +15,14 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    this.tasks = this.todoService.list();
+    this.todoService.get(true).subscribe(
+      data => {
+        this.tasks = data;
+      },
+      err => {
+        console.log(err);
+      }
+    );
   }
 
 }
