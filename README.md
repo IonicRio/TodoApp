@@ -33,6 +33,7 @@ TodoApp Builded with Ionic 2 at Ionic Rio Meetup
 + [Angular 2 - Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
 + [Angular 2 - HTTP Requests with Observables](https://scotch.io/tutorials/angular-2-http-requests-with-observables)
 + [Angular 2 - Observables and Reactive Programming in Angular 2](http://blog.rangle.io/observables-and-reactive-programming-in-angular-2/)
++ [ES 6 Promises](http://nipher.io/es6-promises)
 + [Ionic 2 - View Lifecicle](http://blog.ionic.io/navigating-lifecycle-events)
 + [Ionic 2 - Visual Studio Code Plugin](https://marketplace.visualstudio.com/items?itemName=Thavarajan.ionic2)
 + [JSON Server - Create REST API's from an JSON file](https://github.com/typicode/json-server)
