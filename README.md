@@ -26,6 +26,7 @@ TodoApp Builded with Ionic 2 at Ionic Rio Meetup
 + To start json server with Todo Api, install the JSON Server package and them start it
 
 `npm install -g json-server`
+
 `json-server db.json --watch`
 
 ## References used in our last Meetup
