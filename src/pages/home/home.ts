@@ -1,4 +1,5 @@
-import { AboutPage } from './../about/about';
+import { AddTodoComponent } from './../../components/add-todo/add-todo';
+import { ModalController } from 'ionic-angular/es2015';
 import { Todo } from './../../providers/todo';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
@@ -10,7 +11,7 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
   public tasks;
-  constructor(public navCtrl: NavController, public todoService: Todo) {
+  constructor(public navCtrl: NavController, public todoService: Todo, public ModalController: ModalController) {
 
   }
 
@@ -23,6 +24,15 @@ export class HomePage {
         console.log(err);
       }
     );
+  }
+
+  openAddTodoForm() {
+    let modal = this.ModalController.create(AddTodoComponent);
+    modal.present();
+  }
+
+  deleteTodo(id) {
+
   }
 
 }
